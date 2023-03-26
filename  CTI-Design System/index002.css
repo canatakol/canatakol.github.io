@@ -1,5 +1,102 @@
-/* General styles */
+:root {
+--primary1: hsl(207, 100%, 48%);
+--primary2: hsl(207, 100%, 53%);
 
+--secondary1: hsl(210, 8%, 49%);
+--secondary2: hsl(210, 8%, 54%);
+
+
+--success1: hsl(141, 72%, 41%);
+--success2: hsl(141, 72%, 46%);
+
+
+--warning1: hsl(45, 100%, 56%);
+--warning2: hsl(45, 100%, 61%);
+
+--danger1: hsl(354, 71%, 53%);
+--danger2: hsl(354, 71%, 58%);
+
+
+--info1: hsl(192, 79%, 41%);
+--info2: hsl(192, 79%, 48%);
+
+
+}
+
+/* Buttons styles */
+  
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:flex-start; 
+    gap: 0.5rem;    
+  }
+  
+  .button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    flex-basis: 32%;
+    background-color: #fff;
+  }
+  
+
+
+/* Color styles */
+
+.Primary {
+    background-color: var(--primary1);
+}
+.Secondary {
+    background-color: var(--secondary1);
+}
+.Success {
+    background-color: var(--success1);
+}
+.Warning {
+    background-color: var(--warning1);
+}
+.Danger {
+    background-color: var(--danger1);
+}
+.Info {
+    background-color: var(--info1);
+}
+
+    .Primary:hover {
+    color: #fff;
+    background-color: var(--primary2);
+  }
+   .Secondary:hover {
+    color: #fff;
+    background-color: var(--secondary2);
+  }
+    .Success:hover {
+    color: #fff;
+    background-color: var(--success2);
+  }
+    .Warning:hover {
+    color: #fff;
+    background-color: var(--warning2);
+  }
+    .Danger:hover {
+    color: #fff;
+    background-color: var(--danger2);
+  }
+    .Info:hover {
+    color: #fff;
+    background-color: var(--info2);
+  }
+
+
+/* General styles */
   
   * {
     box-sizing: border-box;
@@ -24,12 +121,14 @@
     padding: 80px 0;
   }
   
-  .section-heading {
+  .section-title {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
+    width: 100%;
   }
+
   
   /* Header styles */
   
@@ -62,7 +161,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   
@@ -92,11 +191,11 @@
     height: 3px;
     background-color: #333;
     margin: 5px; 
-    /* transition: all 0.3s ease; */
+    transition: all 0.3s ease;
   }
   
   @media screen and (max-width: 768px) {
-    .nav-links {
+    .nav-item {
       display: none;
     }
   
@@ -181,14 +280,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0.5rem;
   }
   
   .color {
-    flex-basis: calc(25% - 20px);
-    margin-bottom: 40px;
+    flex-basis: 32%;
+    padding: 0.5rem;
+    color: white;
   }
   
   .color-name {
+    
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -199,33 +301,8 @@
     font-weight: 400;
   }
   
-  /* Buttons styles */
   
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .button {
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 14px 32px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    transition: background-color 0.2s ease-in-out;
-    width: 100%;
-    max-width: 200px;
-    text-align: center;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
+
   /* Forms styles */
   
   .form-group {
@@ -310,6 +387,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -355,20 +433,20 @@
   
   /* Responsive styles */
   
-  @media (max-width: 767px) {
+  @media (max-width: 767px) 
+  {
     .container {
       max-width: 100%;
       padding: 0 20px;
     }
   
     .color {
-      flex-basis: calc(50% - 20px);
+      flex-basis: calc(50% - 20px); 
     }
-  }
+}
   
   @media (max-width: 576px) {
     .color {
       flex-basis: 100%;
     }
-  }
-  
+}
