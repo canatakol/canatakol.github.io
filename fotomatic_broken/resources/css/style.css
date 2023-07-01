@@ -186,6 +186,8 @@ header .mobile {
     width: auto;
     height: auto;
     background-color: transparent;
+    background-color: red;
+
     border: none;
   }
 
