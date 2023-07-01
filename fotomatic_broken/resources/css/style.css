@@ -129,7 +129,7 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items:center;
   height: 43.5rem;
 }
 
