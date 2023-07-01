@@ -133,12 +133,12 @@ header .mobile {
   height: 43.5rem;
 }
 
-.banner{
+#sign-up-section.banner{
   background-image: url("./resources/images/banner-landingpage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: red;
+  
 }
 
 #sign-up-cta {
