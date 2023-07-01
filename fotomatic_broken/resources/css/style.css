@@ -188,7 +188,7 @@ header .mobile {
     background-color:#9dc20b;
     
 
-    border: none;
+    border: solid 1px #979797;
   }
 
   #sign-up-cta .content {
