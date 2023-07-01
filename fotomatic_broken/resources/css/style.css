@@ -138,6 +138,7 @@ header .mobile {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: red;
 }
 
 #sign-up-cta {
