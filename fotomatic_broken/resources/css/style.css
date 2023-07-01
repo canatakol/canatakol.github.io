@@ -127,10 +127,11 @@ header .mobile {
 
 
 #sign-up-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 43.5rem;
+  display: absolute;
+  top: 170px;
+  left: 100px;
+  
+  width: 100%;
 }
 
 .banner{
