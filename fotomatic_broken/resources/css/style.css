@@ -5,6 +5,12 @@ html {
   font-size: 16px;
 }
 
+.content a{
+  color:#4a4a4a;
+  font-size: 1.5rem;
+  font-family: "Roboto-Mono-Regular";
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
