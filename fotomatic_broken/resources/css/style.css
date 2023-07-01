@@ -12,6 +12,13 @@ html {
   font-family: "Roboto",sans-serif;
 }
 
+.desktop .logo a{
+  color:#4a4a4a;
+  color:red;
+  font-size: 1.5rem;
+  font-family: "Roboto",sans-serif;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
