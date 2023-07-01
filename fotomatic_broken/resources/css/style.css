@@ -12,7 +12,7 @@ html {
   font-family: "Roboto",sans-serif;
 }
 
-.desktop .logo a{
+.desktop.logo a{
   color:#4a4a4a;
   color:red;
   font-size: 1.5rem;
