@@ -133,7 +133,7 @@ header .mobile {
   height: 43.5rem;
 }
 
-#sign-up-section .banner{
+.banner{
   background-image: url("./resources/images/banner-landingpage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
