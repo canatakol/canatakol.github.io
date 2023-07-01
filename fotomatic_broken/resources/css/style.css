@@ -125,11 +125,19 @@ header .mobile {
 
 /* Sign Up Section */
 
+
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+}
+
+#sign-up-section .banner{
+  background-image: url("./resources/images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #sign-up-cta {
