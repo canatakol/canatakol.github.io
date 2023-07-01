@@ -134,9 +134,10 @@ header .mobile {
 }
 
 .banner{
-  background-image: url("../banner-landingpage.jpg");
   width: 100%;
   height: 100%;
+  background-image: url("../banner-landingpage.jpg");
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
