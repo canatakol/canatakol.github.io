@@ -8,16 +8,31 @@
     --secondaryHover: hsla(139, 100%, 23%,1); 
 
     --black: hsla(219, 95%, 15%,1);
+    --text: hsla(240, 64%, 27%,1);
        
 /* Card dimension  */
-    --cardWidth: 33%;
-    --cardHeight: 280px;
-    --cardMargin: 16px;
+    --cardWidth: 30%;
+    --cardHeight: 20rem;
+    --cardMargin: 1rem;
+
+    @media only screen and (max-width: 519px)  {
+      --cardWidth: 33%;
+    }
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 0px;
+  color: red;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  max-width: 90rem;
 }
 
 /* Headings CSS */
 h1, h2, h3, h4, h5, h6, p {
-    color: var(--secondary);
+    color: var(--primaryHover);
     font-weight: bold;
     margin-block-start: 0;
     margin-block-end: 0; 
@@ -44,6 +59,7 @@ p {
   }
 
   h3.title {
+    
     margin-top: 2rem;
     margin-left:1rem ;
     display: block;
@@ -73,21 +89,16 @@ p {
     line-height: 1.5;
   }
 
-html {
-    margin: 0px auto;
-    padding: 0px;
-    color: red;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    max-width: 1440px;
-}
+
 
 body {
     margin: 0px;
 }
-.navbar {
-    background-color: #f1f1f1;
+  .navbar {
+    background-color: var(--white);
+    border-bottom: 0.1rem solid #f1f1f1;
     height: auto;
+    
   }
   
   .navbar ul {
@@ -99,7 +110,7 @@ body {
   .navbar li {
     display: inline-block;
     padding: 1rem 1rem;
-    color: #333;
+    
   }
 
   .navbar li:first-child
@@ -110,37 +121,43 @@ body {
   }
 
   .navbar li a {
+    font-weight: 700;
     display: block;
     font-size: 0.875rem;
+    text-decoration: none;
     
    
   }
   
   .navbar li a:hover {
-    background-color: #ddd;
+    text-decoration: underline;
+    color: var(--primaryHover);
   }
 
 header {
     background-image: url(./resources/norruth_istanbul_streets_morningtime_maelstrom_flood_under_wate_c87cb3ca-ae08-4087-a112-454e27ad7319.png);
-    width: 100%;
+    
     min-height: 40rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 2rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-    
-    color: var(--white);
-    padding-top: 2rem;
-    font-size: 3rem;
-    text-align: center;
+header h1 {  
+  color: var(--white);
+  padding-top: 15rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .description {
     color: white;
     font-size: 1rem; 
-    max-width: 480px;
+    max-width: 30rem;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 4rem;
@@ -169,13 +186,13 @@ header h1 {
 .content-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  grid-gap: 20px;
+  grid-auto-rows: minmax(32rem, auto);
+  grid-gap: 0;
 }
 
 .card-grid {
     display: grid;
-    width: calc(var(--cardWidth)*2.5);
+    width: calc(var(--cardWidth)*1rem);
     margin: var(--cardMargin);
     background-color: #f1f1f1;
     padding: 1.5rem 1.5rem;
@@ -194,28 +211,27 @@ header h1 {
     
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
   }
 
 div.card h5 , div.card-grid h5{
-    color: var(--primary);
-    padding-top: 1rem;
-    padding-bottom: calc(1rem/2);
+  color: var(--primaryHover);
+  padding-top: 1rem;
+  padding-bottom: calc(1rem/2);
 }
 
 button {
   width: 100%;
-    font-weight: 700;
-    margin: 1rem auto;
-    background-color: var(--primary);
-    border: 0;
-    border-radius: 2rem;
-    color:#FFFFFF;
-    padding: 1rem 2rem;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1); 
-    transition: all 500ms ease-out;
-    
+  font-weight: 700;
+  margin: 1rem auto;
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 2rem;
+  color:#FFFFFF;
+  padding: 1rem 2rem;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1); 
+  transition: all 500ms ease-out;
 }
 
 button:hover {
@@ -236,7 +252,7 @@ button:hover {
   }
 
   header {
-    width: 100%;
+    
     min-height: 16rem;
     background-size: cover;
     background-position: center center;
@@ -246,8 +262,8 @@ button:hover {
   .content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(300px, auto);
-    grid-gap: 20px;
+    grid-auto-rows: minmax(20rem, auto);
+    grid-gap: 0;
   }
 }
 
@@ -262,7 +278,7 @@ button:hover {
   }
 
   header {
-    width: 100%;
+    margin: 1rem;
     min-height: 24rem;
     background-size: cover;
     background-position: center center;
@@ -281,10 +297,11 @@ button:hover {
 
   .content-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(400px, auto);
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(30rem, auto);
     grid-gap: 0;
   }
 
   
 }
+
