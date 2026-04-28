@@ -1,0 +1,4 @@
+body {
+  /* Use the theme foreground color so text matches the design tokens */
+  color: var(--foreground);
+}
